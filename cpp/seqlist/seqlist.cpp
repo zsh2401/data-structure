@@ -29,6 +29,10 @@ fx::ExecStatus set(SeqList list, size_t index, int data)
     list->dataArray[index] = data;
     return fx::RETCODE_SUCCESS;
 }
+int get_unsafe(SeqList list, size_t index)
+{
+    return list->dataArray[index];
+}
 fx::ExecStatus get(SeqList list, size_t index, int &result)
 {
     if (index >= list->length)

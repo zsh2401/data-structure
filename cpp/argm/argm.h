@@ -4,8 +4,49 @@
 #include "../seqlist/seqlist.h"
 namespace argm
 {
-void bubbleSort(seqlist::SeqList seq);
-void quickSort(seqlist::SeqList seq);
-void heapSort(seqlist::SeqList seq);
+/*
+冒泡排序
+平均时间:O(n²) 
+最坏时间:O(n²) 
+附加空间:O(1) 
+稳定性: 稳定
+*/
+void bubbleSort(seqlist::SeqList list);
+/*
+快速排序
+平均时间复杂度: O(n * log2n)
+最坏所需时间: O(n * log2n)
+附加空间: O(n)
+稳定性: 不稳定
+*/
+void quickSort(seqlist::SeqList list);
+/*
+直接插入排序
+平均时间复杂度: O(n²)
+最坏所需时间: O(n²)
+附加空间: O(1)
+稳定性: 稳定
+*/
+void insertSort(seqlist::SeqList list);
+/*
+堆排序
+平均时间复杂度: O(nlog2n)
+最坏所需时间: O(nlog2n)
+附加空间: O(1)
+稳定性: 不稳定
+
+未实现
+*/
+void heapSort(seqlist::SeqList list);
+/*
+希尔排序
+平均时间复杂度: O(n的1.3次方)
+最坏所需时间: /
+附加空间: O(1)
+稳定性: 不稳定
+
+未实现
+*/
+void shellSort(seqlist::SeqList list);
 } // namespace argm
 #endif

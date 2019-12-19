@@ -1,8 +1,5 @@
 {
     "files.associations": {
-        "iostream": "cpp",
-        "algorithm": "cpp",
-        "functional": "cpp",
         "cmath": "cpp",
         "cstddef": "cpp",
         "cstdint": "cpp",
@@ -11,9 +8,11 @@
         "cstring": "cpp",
         "cwchar": "cpp",
         "exception": "cpp",
+        "functional": "cpp",
         "initializer_list": "cpp",
         "ios": "cpp",
         "iosfwd": "cpp",
+        "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
         "list": "cpp",
