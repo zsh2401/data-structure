@@ -1,19 +1,7 @@
-#include "../fx.h"
-#include <stdarg.h>
+#include "seqlist.h"
 namespace seqlist
 {
-typedef struct __seqlist
-{
-    int *dataArray;
-    size_t length;
-} * SeqList;
-SeqList createFrom(size_t argc, int firstNum, ...)
-{
-    SeqList seq;
-    create(seq, argc, firstNum);
-    return seq;
-}
-fx::ExecStatus create(SeqList &seqList, size_t length, int firstNum, ...)
+SeqList createFrom(size_t length, int firstNum, ...)
 {
     int count;
     int *array = (int *)malloc(sizeof(int) * length);
@@ -25,12 +13,12 @@ fx::ExecStatus create(SeqList &seqList, size_t length, int firstNum, ...)
         array[i] = va_arg(ap, int);
     }
 
-    seqList = (SeqList)malloc(sizeof(__seqlist));
+    auto seqList = (SeqList)malloc(sizeof(__seqlist));
     seqList->length = length;
     seqList->dataArray = array;
 
     va_end(ap);
-    return fx::RETCODE_SUCCESS;
+    return seqList;
 }
 fx::ExecStatus set(SeqList list, size_t index, int data)
 {
