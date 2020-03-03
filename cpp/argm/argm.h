@@ -4,6 +4,7 @@
 #include "../seqlist/seqlist.h"
 namespace argm
 {
+void printEachOf(seqlist::SeqList list);
 /*
 冒泡排序
 平均时间:O(n²) 
@@ -12,6 +13,11 @@ namespace argm
 稳定性: 稳定
 */
 void bubbleSort(seqlist::SeqList list);
+void bubbleSortSingle(seqlist::SeqList list);
+/*
+简单选择排序
+*/
+void selectSort(seqlist::SeqList list);
 /*
 快速排序
 平均时间复杂度: O(n * log2n)
