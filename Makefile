@@ -7,6 +7,7 @@ GPP = g++
 .PHONY=clean,initdir
 
 SOURCEFILES = $(wildcard $(SRC_DIR)/*.cpp) 
+SOURCEFILES = $(wildcard $(SRC_DIR)/oopds/*.cpp) 
 SOURCEFILES += $(wildcard $(SRC_DIR)/argm/*.cxx)
 SOURCEFILES += $(wildcard $(SRC_DIR)/*.c)
 
