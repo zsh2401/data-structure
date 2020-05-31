@@ -1,4 +1,0 @@
-class LinkedList{
-    add(){}
-    remove(){}
-}
