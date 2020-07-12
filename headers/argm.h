@@ -19,13 +19,15 @@ void bubbleSort(seqlist::SeqList list);
 void bubbleSortSingle(seqlist::SeqList list);
 /*
 简单选择排序
+平均时间复杂度 O(n)
+空间复杂度 O(1)
 */
 void selectSort(seqlist::SeqList list);
 /*
 快速排序
 平均时间复杂度: O(n * log2n)
-最坏所需时间: O(n * log2n)
-附加空间: O(n)
+最坏所需时间: O(n)
+附加空间: O(logn)
 稳定性: 不稳定
 */
 void quickSort(seqlist::SeqList list);
@@ -41,7 +43,7 @@ void insertSort(seqlist::SeqList list);
 堆排序
 平均时间复杂度: O(nlog2n)
 最坏所需时间: O(nlog2n)
-附加空间: O(1)
+附加空间: O(n)
 稳定性: 不稳定
 
 未实现

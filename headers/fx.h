@@ -7,6 +7,11 @@ Version 0.5-Lee
 #include <stdlib.h>
 #include <stdio.h>
 #include <functional>
+#define RETCODE_SUCC = 0;
+#define RETCODE_ERR_NULL = -1;
+#define RETCODE_ERR_OVERFLOW = 2;
+typedef int result_t;
+typedef void* dsdata_t;
 namespace fx
 {
 typedef int ExecStatus;

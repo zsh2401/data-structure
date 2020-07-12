@@ -4,6 +4,7 @@ OBJ_DIR = $(BUILD_DIR)/obj
 EXECUTABLE_DIR = $(BUILD_DIR)/exe
 GCC = gcc
 GPP = g++
+CC = gcc
 .PHONY=clean,initdir
 
 SOURCEFILES = $(wildcard $(SRC_DIR)/*.cpp) 
@@ -20,6 +21,11 @@ argmtest: ds
 
 ds: 
 	$(GPP) -c $(SOURCEFILES)
+lib: ds
+	echo "This target has not been implenmented in this version."
+test: ds
+
+play: ds
 
 clean:
 	@rm -rf *.o $(BUILD_DIR)
