@@ -34,20 +34,17 @@ typedef int DS_ExecStatus;
 /*
 Get an cotinuely memory space.
 */
-void* DS_malloc(size_t size);
+void* DS_malloc(DS_size_t size);
 
 /*
-Get an cotinuely memory space and put all bytes to zero.
+Free memory.
 */
-void* DS_cmalloc(size_t size);
+void DS_free(void* ptr);
 
-void* DS_kkmalloc(size_t unitSize,size_t count);
-
-void DS_free(void* block);
 /*
 This is the classic printf method which blocked difference between operating systems.
 */
-void DS_printf(const char* fmt,void* f,...);
+void DS_printf(const char* const format,...);
 
 /*
 Get this library's version information.

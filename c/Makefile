@@ -2,8 +2,6 @@ SRC_DIR = ./sources
 BUILD_DIR = ./build
 OBJ_DIR = $(BUILD_DIR)/obj
 EXECUTABLE_DIR = $(BUILD_DIR)/exe
-GCC = gcc
-GPP = g++
 CC = gcc
 .PHONY=clean,initdir
 
